@@ -1,48 +1,51 @@
 <html lang="en">
-  <style>
-    :root {
-      --primary-color: #222;
-      --secondary-color: #fafafa;
-
-      --boxed-width: 80ch;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    html, body, header, main, footer, div {
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: sans-serif;
-      background: var(--primary-color);
-      color: var(--secondary-color);
-    }
-    header {
-      background: var(--secondary-color);
-      color: var(--primary-color);
-      text-align: center;
-      padding: 0.4rem 0;
-    }
-    header h1 { font-size: 2rem; margin-bottom: 0.2rem; }
-    header p { font-size: 1.4rem; margin: none; }
-    main {
-      width: var(--boxed-width);
-      margin: auto;
-      padding: 4rem 0 2rem;
-      font-size: 1.2rem;
-      line-height: 2rem;
-    }
-    footer {
-      background: #111;
-    }
-    .footer-inner {
-      width: var(--boxed-width);
-      margin: auto;
-      padding: 2rem 0;
-      background: red;
-    }
-  </style>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        --primary-color: #222;
+        --secondary-color: #fafafa;
+  
+        --boxed-width: 960px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html, body, header, main, footer, div {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: sans-serif;
+        background: var(--primary-color);
+        color: var(--secondary-color);
+      }
+      header {
+        background: var(--secondary-color);
+        color: var(--primary-color);
+        text-align: center;
+        padding: 0.4rem 0;
+      }
+      header h1 { font-size: 2rem; margin-bottom: 0.2rem; }
+      header p { font-size: 1.4rem; margin: none; }
+      main {
+        max-width: var(--boxed-width);
+        margin: auto;
+        padding: 4rem 0 2rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+      footer {
+        background: #111;
+      }
+      .footer-inner {
+        max-width: var(--boxed-width);
+        margin: auto;
+        padding: 2rem 0;
+        background: red;
+      }
+    </style>
+  </head>
   <body>
     <header>
       <h1>From Zero to Salsero 🕺💃</h1>
